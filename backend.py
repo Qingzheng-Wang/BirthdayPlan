@@ -1,5 +1,4 @@
 import datetime
-import time
 from datetime import  timedelta
 
 def days_from_today_to_next_birthday(today, birthday):

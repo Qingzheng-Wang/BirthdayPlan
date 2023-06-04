@@ -14,161 +14,470 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="gridLayoutWidget">
+   <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>160</y>
-      <width>679</width>
-      <height>211</height>
+      <x>10</x>
+      <y>10</y>
+      <width>1011</width>
+      <height>731</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout_2">
-     <item row="0" column="1">
-      <widget class="QDateEdit" name="dateEditToday">
-       <property name="font">
-        <font>
-         <family>Microsoft YaHei UI</family>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         <family>Microsoft YaHei UI</family>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="page_1">
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>190</y>
+        <width>631</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>24</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Welcome to BirthdayPlanner!</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonStart">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>460</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>400</y>
+        <width>411</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <column>
        <property name="text">
-        <string>                        Select Birthday</string>
+        <string>Name</string>
        </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_3">
        <property name="font">
         <font>
          <family>Microsoft YaHei UI</family>
          <pointsize>12</pointsize>
         </font>
        </property>
+       <property name="textAlignment">
+        <set>AlignJustify|AlignVCenter</set>
+       </property>
+      </column>
+      <column>
        <property name="text">
-        <string>How many days in advance do you plan your birthday?</string>
+        <string>Relation</string>
        </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QDateEdit" name="dateEditBirthday">
        <property name="font">
         <font>
          <family>Microsoft YaHei UI</family>
          <pointsize>12</pointsize>
         </font>
        </property>
-      </widget>
-     </item>
-     <item row="0" column="0">
-      <widget class="QLabel" name="label">
-       <property name="font">
-        <font>
-         <family>Microsoft YaHei UI</family>
-         <pointsize>12</pointsize>
-        </font>
+       <property name="textAlignment">
+        <set>AlignJustify|AlignVCenter</set>
        </property>
+      </column>
+      <column>
        <property name="text">
-        <string>                        Select Today's Date</string>
+        <string>Birthday</string>
        </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QLineEdit" name="lineEditN">
        <property name="font">
         <font>
          <family>Microsoft YaHei UI</family>
          <pointsize>12</pointsize>
         </font>
        </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>70</y>
-      <width>261</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Microsoft YaHei UI</family>
-      <pointsize>22</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Birthday Plan</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>410</y>
-      <width>121</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Microsoft YaHei UI</family>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Generate</string>
-    </property>
-   </widget>
-   <widget class="QWidget" name="horizontalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>480</y>
-      <width>551</width>
-      <height>211</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QLabel" name="label_5">
-       <property name="font">
-        <font>
-         <family>Microsoft YaHei UI</family>
-         <pointsize>12</pointsize>
-        </font>
+       <property name="textAlignment">
+        <set>AlignJustify|AlignVCenter</set>
        </property>
-       <property name="text">
-        <string>      Results:      </string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QTextBrowser" name="textBrowser">
-       <property name="font">
-        <font>
-         <family>Microsoft YaHei UI</family>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-      </widget>
-     </item>
-    </layout>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>160</y>
+        <width>72</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Name:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditName">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>160</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditRelation">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>210</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>210</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Relation:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>260</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Birthday:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonAdd">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>320</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="dateEditBirthday_2">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>260</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonContinue">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>630</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Continue</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>60</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>24</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add People</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>160</y>
+        <width>679</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>How many days in advance do you plan your birthday?</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_15">
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>                        Select Name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>                        Select Today's Date</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEditN_2">
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="comboBoxPeople">
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QDateEdit" name="dateEditToday_2">
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>440</y>
+        <width>551</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>      Results:      </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextBrowser" name="textBrowser_2">
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pushButtonGenerate">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>390</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Generate</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>50</y>
+        <width>261</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>22</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Birthday Plan</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonGenerate_2">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>670</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4"/>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
